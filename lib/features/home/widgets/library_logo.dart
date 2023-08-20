@@ -11,10 +11,9 @@ class LibraryLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SvgPicture.asset(
-           ImagaAssets.logoLibraryAttabaAbbasiya,
+        ImagaAssets.logoLibraryAttabaAbbasiya,
         height: 60,
         fit: BoxFit.fitHeight,
-        
       ),
     );
   }

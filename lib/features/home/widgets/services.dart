@@ -18,7 +18,7 @@ class Services extends StatelessWidget {
           Column(
             children: [
               Text(
-                LocaleKeys.serviceslibrary.tr(),
+                LocaleKeys.serviceslibrary.tr(), // خدمات المكتبة
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,

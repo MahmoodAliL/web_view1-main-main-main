@@ -8,6 +8,7 @@ class AboutButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textDirection = Directionality.of(context);
     return FilledButton(
       onPressed: () {
         Navigator.push(
@@ -22,7 +23,10 @@ class AboutButton extends StatelessWidget {
               borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(10),
           ))),
-      child: Text(LocaleKeys.abuot.tr()),
+      child: Text(
+        LocaleKeys.abuot.tr(),
+        textDirection: textDirection,
+      ),
     );
   }
 }

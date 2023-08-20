@@ -48,9 +48,9 @@ class ChangeLangButton extends StatelessWidget {
             // onSelected: (item) => handleClick(item),
             onSelected: (locale) {
               if (locale == 0) {
-                context.setLocale(const Locale('ar'));
+                context.setLocale(const Locale('ar', 'SA'));
               } else {
-                context.setLocale(const Locale('en'));
+                context.setLocale(const Locale('en', 'US'));
               }
             },
             itemBuilder: (context) => [

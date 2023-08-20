@@ -23,13 +23,15 @@ void main() async {
             EasyLocalization(
                 path: 'assets/translations', // en.json and ar.json
                 supportedLocales: const [
-                  Locale('en'),
-                  Locale('ar'),
+                  Locale('ar', 'SA'),
+                  Locale('en', 'US'),
                 ],
                 fallbackLocale: const Locale('ar'),
                 //
                 assetLoader: const CodegenLoader(), //class generate
 
+                // saveLocale: false,
+                // useOnlyLangCode: true,
                 child: const App())),
   );
 }
@@ -45,15 +47,17 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       useInheritedMediaQuery: true,
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      // supportedLocales: [
-      //   Locale('ar'), // English
+      // localizationsDelegates: const [
+      //   GlobalMaterialLocalizations.delegate,
+      //   GlobalWidgetsLocalizations.delegate,
+      //   GlobalCupertinoLocalizations.delegate,
       // ],
-      // localizationsDelegates: context.localizationDelegates,
+      // supportedLocales: const [
+      //   Locale('ar'),
+      //   Locale('en'), // English
+      // ],
+
+      localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
 
