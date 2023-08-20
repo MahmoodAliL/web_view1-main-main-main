@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:web_view/features/about/abuot.dart';
+import 'package:web_view/translations/locale_keys.g.dart';
 
 class AboutButton extends StatelessWidget {
   const AboutButton({Key? key}) : super(key: key);
@@ -20,7 +22,7 @@ class AboutButton extends StatelessWidget {
               borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(10),
           ))),
-      child: const Text('حول'),
+      child: Text(LocaleKeys.abuot.tr()),
     );
   }
 }

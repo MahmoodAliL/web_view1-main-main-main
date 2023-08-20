@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class ChangeLangButton extends StatelessWidget {
@@ -45,6 +46,13 @@ class ChangeLangButton extends StatelessWidget {
               ),
             ),
             // onSelected: (item) => handleClick(item),
+            onSelected: (locale) {
+              if (locale == 0) {
+                context.setLocale(const Locale('ar'));
+              } else {
+                context.setLocale(const Locale('en'));
+              }
+            },
             itemBuilder: (context) => [
               const PopupMenuItem<int>(value: 0, child: Text('العربية')),
               const PopupMenuItem<int>(value: 1, child: Text('English')),

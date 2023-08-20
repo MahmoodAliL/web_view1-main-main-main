@@ -6,7 +6,7 @@ import 'dart:ui';
 
 import 'package:easy_localization/easy_localization.dart' show AssetLoader;
 
-class CodegenLoader extends AssetLoader{
+class CodegenLoader extends AssetLoader {
   const CodegenLoader();
 
   @override
@@ -14,11 +14,16 @@ class CodegenLoader extends AssetLoader{
     return Future.value(mapLocales[locale.toString()]);
   }
 
-  static const Map<String,dynamic> ar = {
-  "abuot": "حول"
-};
-static const Map<String,dynamic> en = {
-  "abuot": "abuot"
-};
-static const Map<String, Map<String,dynamic>> mapLocales = {"ar": ar, "en": en};
+  static const Map<String, dynamic> ar = {
+    "abuot": "حول",
+    "serviceslibrary": "خدمات المكتبة"
+  };
+  static const Map<String, dynamic> en = {
+    "abuot": "abuot",
+    "serviceslibrary": "Services Library"
+  };
+  static const Map<String, Map<String, dynamic>> mapLocales = {
+    "ar": ar,
+    "en": en
+  };
 }

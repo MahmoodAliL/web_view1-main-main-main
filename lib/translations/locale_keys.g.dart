@@ -2,5 +2,6 @@
 
 abstract class  LocaleKeys {
   static const abuot = 'abuot';
+  static const serviceslibrary = 'serviceslibrary';
 
 }

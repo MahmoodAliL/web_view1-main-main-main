@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:web_view/translations/locale_keys.g.dart';
 import 'package:web_view/web_view_page.dart';
 
 class Services extends StatelessWidget {
@@ -16,7 +18,7 @@ class Services extends StatelessWidget {
           Column(
             children: [
               Text(
-                'خدمات المكتبة',
+                LocaleKeys.serviceslibrary.tr(),
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
