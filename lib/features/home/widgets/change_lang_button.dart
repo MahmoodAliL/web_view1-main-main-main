@@ -7,7 +7,7 @@ class ChangeLangButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 8.0),
+      padding: const EdgeInsetsDirectional.only(start: 8.0),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(100),
         child: Material(

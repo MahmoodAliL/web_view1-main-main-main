@@ -99,7 +99,11 @@ flutter:
 
 
 
-
+  fonts:
+    - family: zahraArabic
+      fonts:
+        - asset: assets/fonts/ZahraArabic.ttf
+        - asset: assets/fonts/ZahraArabicRegular.ttf
 
      
 

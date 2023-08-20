@@ -56,7 +56,15 @@ class App extends StatelessWidget {
       //   Locale('ar'),
       //   Locale('en'), // English
       // ],
-
+      theme: ThemeData(
+        fontFamily: 'zahraArabic',
+        primaryColor: const Color(0xFF0071BD),
+        filledButtonTheme: FilledButtonThemeData(
+          style: FilledButton.styleFrom(
+            backgroundColor: const Color(0xFF0071BD),
+          ),
+        ),
+      ),
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,

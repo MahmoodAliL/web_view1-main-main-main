@@ -150,9 +150,9 @@ class SearchPlaceHolder extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
         decoration: BoxDecoration(
           border: Border.all(color: Theme.of(context).primaryColor),
-          borderRadius: const BorderRadius.only(
-            topRight: Radius.circular(8),
-            bottomRight: Radius.circular(8),
+          borderRadius: const BorderRadiusDirectional.only(
+            topStart: Radius.circular(8),
+            bottomStart: Radius.circular(8),
           ),
         ),
         child: const Text('ابحث في مصادر مكتبة العتبة العباسية'),
@@ -172,9 +172,9 @@ class SearchIcon extends StatelessWidget {
       height: 30,
       width: 30,
       decoration: BoxDecoration(
-        borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(8),
-          bottomLeft: Radius.circular(8),
+        borderRadius: const BorderRadiusDirectional.only(
+          topEnd: Radius.circular(8),
+          bottomEnd: Radius.circular(8),
         ),
         color: Theme.of(context).primaryColor,
       ),
